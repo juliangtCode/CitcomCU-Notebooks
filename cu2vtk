@@ -1,0 +1,7 @@
+#!/bin/bash
+# Tested using bash version 4.1.5
+for ((i=0;i<=59500;i+=500)); 
+do 
+   ../citcomcu_write_vtk 'case-JSA004' 16 $i
+   echo $i
+done
